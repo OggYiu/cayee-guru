@@ -190,7 +190,7 @@ export default function PrintReceipt() {
       builder.addText(ticketNumber + '\n\n');
 
       // 3. Print QR code (centered) - 50% bigger, using ID instead of ticket number
-      builder.addSymbol(`https://travelexpo-iota.vercel.app/${id.toLocaleLowerCase()}-page`, 
+      builder.addSymbol(`https://travelexpo-ten.vercel.app/${id.toLocaleLowerCase()}-page`, 
                        builder.SYMBOL_QRCODE_MODEL_2, 
                        builder.LEVEL_M, 
                        6, 6, 0); // 50% bigger QR code (4 * 1.5 = 6)
