@@ -72,7 +72,7 @@ export default function SettingsPage() {
     setSaveStatus('Testing connection...');
 
     try {
-      const address = `http://${ipAddress}/cgi-bin/epos/service.cgi?devid=local_printer&timeout=5000`;
+      const address = `https://${ipAddress}/cgi-bin/epos/service.cgi?devid=local_printer&timeout=5000`;
       
       // Simple test - try to create a connection
       const testPromise = new Promise((resolve, reject) => {
